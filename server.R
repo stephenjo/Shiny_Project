@@ -4,7 +4,7 @@
 
 function(input, output, session){
 
-  apikey <- "AIzaSyBN0pt2UkPV7_CbPur8T8_YlWfAVdYJOAU"
+  apikey <- ""
   
   
   #TRIP MAP
@@ -96,7 +96,6 @@ function(input, output, session){
                          end_lat = dt$startstationlat[n],
                          end_long = dt$startstationlong[n])
         
-        #apikey <- "AIzaSyBN0pt2UkPV7_CbPur8T8_YlWfAVdYJOAU"
         
         polylines <- lapply(1:nrow(mydf), function(x){
           
